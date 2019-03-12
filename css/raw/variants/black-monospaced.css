@@ -248,7 +248,7 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 
 .btn.btn_outline.disabled:hover { background: #424242 !important; color: #949494 !important; }
 
-.btn.btn_attachment { border-color: #545454; }
+.btn.btn_attachment { background-color: #000; border-color: #545454; color: #949494; }
 
 .btn.btn_attachment:hover, .btn.btn_attachment:focus { background-color: #363636; border-color: #828282; }
 
@@ -305,6 +305,8 @@ input[disabled], input[readonly], textarea[disabled], textarea[readonly] { backg
 .c-filter_input { background: #545454; }
 
 .p-share_dialog_message_input { color: #e6e6e6; }
+
+.c-texty_input .ql-placeholder { color: #e6e6e6; }
 
 .lazy_filter_select.disabled { background: #363636; }
 
@@ -1231,6 +1233,8 @@ ts-mention { background: rgba(130, 130, 130, 0.1) !important; color: #e6e6e6 !im
 
 .c-message__image_wrapper:after { border-color: transparent; }
 
+.c-message_kit__file__meta { color: #e6e6e6; }
+
 .attachment_group.has_container { background: #222; border: 1px solid #363636; }
 
 .attachment_group.has_container .inline_attachment::after { background-color: #363636; }
@@ -1639,6 +1643,10 @@ body > pre { background: #828282; }
 
 #threads_msgs.new_banner_is_showing::before { background: #222; }
 
+.p-threads_footer__input .p-message_input_field, .p-threads_footer__input--legacy .p-message_input_field { background: #363636; }
+
+.p-threads_footer__input .p-message_input_file_button, .p-threads_footer__input--legacy .p-message_input_file_button { background: #363636; }
+
 ts-thread { background: #222; }
 
 ts-thread .reply_input_container .inline_message_input_container form textarea { border-color: #363636; color: #e6e6e6; }
@@ -1674,6 +1682,8 @@ ts-thread .new_reply_indicator .blue_dot { color: #bf360c; }
 .reply_input_container .inline_message_input_container .ql-container ~ .emo_menu { color: #949494; }
 
 #file_reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container, #reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container, .reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container { color: #949494; }
+
+#file_reply_container .reply_limited, #reply_container .reply_limited, .reply_input_container .reply_limited, ts-thread .reply_input_container .reply_limited { background-color: #363636; border-color: #545454; color: #e6e6e6; }
 
 #unread_msgs_scroller_div::after { background: transparent; }
 
@@ -2054,6 +2064,10 @@ html.no_touch a.filetype_button_web:hover .file_title { color: #e6e6e6; }
 .p-file_details__name, .p-file_details__share_channel { color: #e6e6e6; }
 
 .p-file_details__meta_container .c-file__action_button { color: #fff; }
+
+.c-pillow_file_container { background-color: #000; }
+
+.c-pillow_file_container .c-pillow_file__swap .c-pillow_file__slide { background-color: #000; }
 
 .c-pillow_file__description, .c-pillow_file__title { color: #e6e6e6; }
 
